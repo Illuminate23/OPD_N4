@@ -3,7 +3,6 @@ from calc import app
 
 class FlaskTestCase(unittest.TestCase):
 
-    # Установка тестового клиента перед каждым тестом
     def setUp(self):
         app.testing = True
         self.client = app.test_client()
